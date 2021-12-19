@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,9 +43,6 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F3C-hs-lL2">
                                 <rect key="frame" x="43" y="88" width="51" height="31"/>
-                                <connections>
-                                    <action selector="operatorSwitch1:" destination="BYZ-38-t0r" eventType="valueChanged" id="lWV-W0-xCY"/>
-                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPA-59-1NN">
                                 <rect key="frame" x="104" y="88" width="8" height="21"/>
@@ -70,9 +67,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47" id="acZ-Nl-OGs"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="operatorSwitch2:" destination="BYZ-38-t0r" eventType="valueChanged" id="18g-HF-tg9"/>
-                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxX-up-umO">
                                 <rect key="frame" x="262" y="88" width="8" height="21"/>
@@ -171,6 +165,8 @@
                         <outlet property="number1Label" destination="fTX-3d-HJO" id="7QE-J6-hQS"/>
                         <outlet property="number2Label" destination="yNX-Pe-hhb" id="gqm-Yt-9Yz"/>
                         <outlet property="resultLabel" destination="3Sc-pG-3AX" id="xSM-hx-4zy"/>
+                        <outlet property="signSwitch1" destination="F3C-hs-lL2" id="OcD-GU-IUK"/>
+                        <outlet property="signSwitch2" destination="eVF-ul-e09" id="STh-nx-ykp"/>
                         <outlet property="textField1" destination="3xB-xa-jh5" id="L7q-8t-X5D"/>
                         <outlet property="textField2" destination="hIr-oG-Ijm" id="Cpm-mO-C7s"/>
                     </connections>
